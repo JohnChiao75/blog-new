@@ -1,6 +1,8 @@
 ---
 title: 友情链接
 date: 2026-02-07 20:56:56
+type: "friends"
+layout: "friends"
 ---
 
 
