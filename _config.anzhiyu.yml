@@ -125,11 +125,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /favicon.png
+favicon: https://cdn.luogu.com.cn/upload/usericon/1366636.png
 
 # Avatar (头像)
 avatar:
-  img: /favicon.png
+  img: https://cdn.luogu.com.cn/upload/usericon/1366636.png
   effect: true
 
 # Disable all banner image
@@ -373,7 +373,7 @@ giscus:
 chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
