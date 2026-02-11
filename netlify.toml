@@ -1,6 +1,5 @@
 [build]
   ignore = "/bin/true"
-[build]
   publish = "public"   # 你的构建输出目录，例如 dist、public、_site 等
   command = "npm run build"   # 如果你希望 CLI 自动执行构建（可选）
 
