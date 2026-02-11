@@ -62,7 +62,8 @@ copy:
 #   name: link || icon
 social:
   Github: https://github.com/JohnChiao75 || anzhiyu-icon-github
-  Luogu: https://luogu.com.cn/user/1366636 || anzhiyu-icon-code
+  # Luogu: https://luogu.com.cn/user/1366636 || anzhiyu-icon-code
+  Email: mailto://johnchiao@outlook.com || anzhiyu-icon-envelope
 
 # 作者卡片 状态
 author_status:
