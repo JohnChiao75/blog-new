@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "npm: build (Node 18.20.4)",
+			"type": "shell",
+			"command": "zsh -i -c 'nvm use blog && npm run build'",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"detail": "Hexo 生成"
+		}
+	]
+}

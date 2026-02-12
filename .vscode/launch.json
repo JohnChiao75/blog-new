@@ -1,0 +1,27 @@
+{
+	// 使用 IntelliSense 了解相关属性。 
+	// 悬停以查看现有属性的描述。
+	// 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Python Debugger: Current File",
+			"type": "debugpy",
+			"request": "launch",
+			"program": "start.py",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Hexo Server (Node blog)",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "/Users/JohnCh/.nvm/versions/node/v18.20.4/bin/node",
+			"args": [
+				"${workspaceFolder}/node_modules/hexo/bin/hexo",
+				"server"
+			],
+			"console": "integratedTerminal",
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}
