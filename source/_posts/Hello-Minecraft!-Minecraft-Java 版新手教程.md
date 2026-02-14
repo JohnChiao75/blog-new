@@ -1,3 +1,11 @@
+---
+title: Hello Minecraft! Minecraft Java 版新手教程
+date: 2026-02-14 13:00:06
+tags: MC
+category: 教程
+---
+
+
 本教程覆盖Minecraft Java版从环境配置、启动安装到进阶玩法的全流程，适配Windows/macOS/Linux系统，所有操作均提供官方渠道与安全指引，新手可直接按步骤操作。
 
 ## 一、前置准备：Java运行环境安装
