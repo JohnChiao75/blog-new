@@ -3,6 +3,7 @@ title: 简明 Ubuntu 安装指南
 date: 2026-02-09 17:00:37
 tags: 系统
 category: 教程
+description: 详细的 Ubuntu 系统安装教程，从硬件准备、U盘烧录、双系统分区到软件配置，助你轻松上手 Linux。
 ---
 
 :::info[写在最前]{open}

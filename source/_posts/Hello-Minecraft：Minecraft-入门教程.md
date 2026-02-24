@@ -3,6 +3,7 @@ title: Hello Minecraft：Minecraft 入门教程
 date: 2026-02-21 16:56:39
 tags: MC
 category: MC
+description: Minecraft Java 版新手入门教程，包括启动器选择、游戏下载、登录方式、联机方法和模组安装。
 ---
 
 ## 一、 启动器选择：开启方块世界的大门

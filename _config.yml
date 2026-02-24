@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://johnch.netlify.app
+url: http://johnch.us.ci
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -146,4 +146,11 @@ envelope_comment:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: indexnow_url_submitter # 新增这一行
+
+  # IndexNow 配置
+hexo_indexnow:
+  count: latest # 或填写具体数字，如 20。表示要提交的最新文章数量，"latest" 表示提交最新的一篇
+  txt_name: indexnow.txt # 保存链接的文件名，保持默认即可
+  apikey: 068a0353bf644d8081274fb68f6ee268  # 请替换为你在上一步获取的 API Key 字符串
+  server: bing # 指定接收推送的搜索引擎，填写 bing 即可

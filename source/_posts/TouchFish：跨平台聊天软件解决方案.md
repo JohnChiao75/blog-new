@@ -4,6 +4,7 @@ date: 2026-02-07 21:08:21
 tags: TouchFish
 category: 工程
 author: JohnChiao75
+description: TouchFish 是一款轻量级跨平台聊天软件，支持内网一键部署，提供多端客户端及丰富指令，适用于团队协作。
 ---
 
 > **WARNING** 叠甲  
