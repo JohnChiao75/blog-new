@@ -5,11 +5,11 @@
 # Site
 title: JohnCh's Blog
 subtitle: JohnCh's Home
-description: ''
+description: 'John Chiao 的个人技术与生活博客，不定期更新（Powered by Hexo and Anzhiyu）'
 keywords:
 author: John Chiao
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -114,7 +114,7 @@ permalink_pinyin:
   separator: '-' # default: '-'
 
 plugins:
-  - hexo-browsersync
+- hexo-browsersync
 hexo-browsersync:
   ghostMode: true # 同步滚动条位置等行为
   notify: true # 开启通知提醒
@@ -129,15 +129,17 @@ envelope_comment:
     line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
     beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
     afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
-  message: #信笺正文，多行文本，写法如下
-    - 有什么想问的？
-    - 有什么想说的？
-    - 有什么想吐槽的？
-    - 哪怕是有什么想吃的，都可以告诉我哦~
+  message:
+  #信笺正文，多行文本，写法如下
+  - 有什么想问的？
+  - 有什么想说的？
+  - 有什么想吐槽的？
+  - 哪怕是有什么想吃的，都可以告诉我哦~
   bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
   height: #1024px，信封划出的高度
   path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
-  front_matter: #【可选】comments页面的 front_matter 配置
+  front_matter:
+    #【可选】comments页面的 front_matter 配置
     title: 留言板
     comments: true
     top_img: false
@@ -147,10 +149,9 @@ envelope_comment:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: indexnow_url_submitter # 新增这一行
-
   # IndexNow 配置
 hexo_indexnow:
   count: latest # 或填写具体数字，如 20。表示要提交的最新文章数量，"latest" 表示提交最新的一篇
   txt_name: indexnow.txt # 保存链接的文件名，保持默认即可
-  apikey: 068a0353bf644d8081274fb68f6ee268  # 请替换为你在上一步获取的 API Key 字符串
+  apikey: 068a0353bf644d8081274fb68f6ee268 # 请替换为你在上一步获取的 API Key 字符串
   server: bing # 指定接收推送的搜索引擎，填写 bing 即可
