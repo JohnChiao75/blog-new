@@ -1,5 +1,5 @@
 ---
-title: 题解：P13253 [GCJ 2014 #1C] Part Elf
+title: 题解：P13253 Part Elf
 date: 2026-05-16 11:05
 tags: 洛谷
 category: 题解
