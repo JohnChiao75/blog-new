@@ -1,5 +1,5 @@
 ---
-title: 分类
+title: 分类 - JohnCh's Home
 layout: categories
 type: categories
 comments: false  # 分类页通常不需要评论
