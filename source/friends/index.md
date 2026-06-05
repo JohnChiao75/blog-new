@@ -1,5 +1,5 @@
 ---
-title: 友情链接
+title: 友情链接 - JohnCh's Home
 date: 2026-02-07 20:56:56
 type: "friends"
 layout: "friends"
