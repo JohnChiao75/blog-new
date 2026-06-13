@@ -1,0 +1,12 @@
+- name: 友链
+  list:
+  - name: TouchFish
+    link: https://touchfish.ilovescratch.us.ci/
+    description: 开源，跨平台聊天软件
+    avatar: https://touchfish.ilovescratch.us.ci/logo.png
+  - name: 灵的梦境
+    link: https://lemonadorable.github.io/
+    description: 愿美梦成真
+    avatar: https://lemonadorable.github.io/_astro/avatar.Blv-t1p9_ZVi3gG.webp
+
+

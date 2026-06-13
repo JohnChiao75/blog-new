@@ -7,6 +7,3 @@ sidebar: true
 seo: true
 ---
 
-# 时间线归档
-
-这里按时间顺序显示所有文章。
