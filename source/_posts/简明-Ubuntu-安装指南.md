@@ -6,30 +6,32 @@ category: 教程
 description: 详细的 Ubuntu 系统安装教程，从硬件准备、U盘烧录、双系统分区到软件配置，助你轻松上手 Linux。
 ---
 
-:::info[写在最前]{open}
+{% callout type=info title=写在最前 open=true %}
 此文章是基于 https://www.luogu.com.cn/article/ruiiz6b4 的修改和补充，如有错误请指正。
-:::
+{% endcallout %}
 
-:::info[Changelog（审核看这里）]
-2025.12.24: 
-  - 修复：修改“安装”一节的结构，符合 Markdown 语法。
-  - **修复**：~~ExFAT~~ -> exFAT。
-  - **内容**：对于烧录过程，增加了对虚拟机的说明。
-  - **排版**：在引导部分使用突出显示而不是方括号。
-  - **修复**：修复引导一节的 Markdown 语法错误：在 F12 按键处多打了反引号（~~``F12`~~）。
-  - **内容**：对于“姓名”“主机名”“用户名”的区别进行了解释。
-  - **内容**：添加关于 Zorin OS 的提示。
-  - **内容**：对于安装编译器的命令进行解释。
-    
-2026.1.3：
-  - **排版**：对于全文添加句号和其他标点。
+{% callout type=info title=Changelog（审核看这里） %}
+2025.12.24:
 
-2026.1.8：
-  - **内容**：对于 Windows，添加软件启动到引导的方式
+- 修复：修改“安装”一节的结构，符合 Markdown 语法。
+- **修复**：~~ExFAT~~ -> exFAT。
+- **内容**：对于烧录过程，增加了对虚拟机的说明。
+- **排版**：在引导部分使用突出显示而不是方括号。
+- **修复**：修复引导一节的 Markdown 语法错误：在 F12 按键处多打了反引号（~~``F12`~~）。
+- **内容**：对于“姓名”“主机名”“用户名”的区别进行了解释。
+- **内容**：添加关于 Zorin OS 的提示。
+- **内容**：对于安装编译器的命令进行解释。
+  2026.1.3：
+- **排版**：对于全文添加句号和其他标点。
+
+  2026.1.8：
+
+- **内容**：对于 Windows，添加软件启动到引导的方式
 
 **2026.2.3（最近一次更新）**：
-  - **内容**：添加关于 macOS 的内容
-:::
+
+- **内容**：添加关于 macOS 的内容
+  {% endcallout %}
 
 ## 一、准备
 
@@ -46,9 +48,9 @@ description: 详细的 Ubuntu 系统安装教程，从硬件准备、U盘烧录�
 
 建议下载 LTS 版本（本文以版本 26 为例），比较稳定。
 
-:::info[关于 Zorin OS]
+{% callout type=info title=关于 Zorin OS %}
 Zorin OS 是一个 Ubuntu 改版，更加接近 Windows 体验，与本文所述安装方式基本相同。
-:::
+{% endcallout %}
 
 ### 3. 磁盘空间
 
@@ -58,9 +60,9 @@ Zorin OS 是一个 Ubuntu 改版，更加接近 Windows 体验，与本文所述
 
 **对于 macOS**：进入“磁盘工具”，选中你的硬盘，点击分区，选择“仍然分区”，分出空间，格式选 `MS-DOS (FAT32)`，弹出的窗口选“继续”
 
-:::warning{open}
+{% callout type=warning open=true %}
 macOS 下分区会使整个系统卡死，请确保关闭所有会一直存取硬盘的应用
-:::
+{% endcallout %}
 
 另外，你可以将你的一些数据分区格式化为 exFAT 来共享文件。
 
@@ -82,14 +84,13 @@ macOS 下分区会使整个系统卡死，请确保关闭所有会一直存取�
 4. 找到“光盘”
 5. 添加镜像
 
-:::success[下一步]{open}
+{% callout type=success title=下一步 open=true %}
 插入 U 盘到目标机，准备安装。
-:::
+{% endcallout %}
 
 ## 二、安装 Ubuntu
 
 ### 启动到引导
-
 
 #### 软件启动（推荐，Windows）
 
@@ -119,9 +120,9 @@ Please select boot device
    EFI ...
 ```
 
-:::warning[如果你的电脑没有启动菜单配置]
+{% callout type=warning title=如果你的电脑没有启动菜单配置 %}
 启动时按住 `F2` 或 `Del`（各品牌主板不同），进入 BIOS，找到 `Boot`，将 U 盘放到最上方，重启（无需按任何按键）即可进入下文的步骤。
-:::
+{% endcallout %}
 
 选择 U 盘，按下 `Enter`。
 
@@ -136,13 +137,11 @@ Please select boot device
 
 选第一个（或第二个），按下 `Enter`。
 
-
 ### 安装过程
 
 1. 选择你的语言：
-   
-   选择 `中文（简体）` 或你想使用的语言。
 
+   选择 `中文（简体）` 或你想使用的语言。
 
 2. 你想对 Ubuntu 做什么：
 
@@ -150,43 +149,36 @@ Please select boot device
 
 3. 您想如何安装 Ubuntu？
 
-   
    选择 `交互式安装`。
 
-   :::warning[不要使用自动 Windows Boot Manager 安装]
+   {% callout type=warning title=不要使用自动 Windows Boot Manager 安装 %}
    Ubuntu 自带的分区是灾难性的，后期很难配置，而且有概率因安全启动和 Windows 更新而卡掉引导。
-   :::
+   {% endcallout %}
 
    如果你需要抹掉之前的系统，选择“擦除硬盘并安装 Ubuntu”，否则选“手动分区”。
-   
+
    如果选择“手动分区”，选择之前配好的空闲空间，点击“更改”，格式化为 ext4，挂载到 `/`，这是 Ubuntu 的系统分区。
 
-
-   :::info[关于磁盘大小]
+   {% callout type=info title=关于磁盘大小 %}
    在此页面中，磁盘的大小可能略高于 Windows 中的大小，因为此处的单位是 kB (1000 B)，而 Windows 使用的是 KB 或 KiB (1024 B)。
-   :::
+   {% endcallout %}
 
-
-5. 选择软件集合
-
+4. 选择软件集合
 
    如果你希望自己安装软件，选择“基本集合”（包含基础工具），否则选择“扩展集合”（包含较多的应用软件，**需要网络连接**）。
 
-
-6. 设置账户
-
-
+5. 设置账户
    - 注意：“姓名”是登录界面上的名字，可以使用空格，安装后可以修改，如 `Farmer John`
    - “主机名”是这台电脑的名字，如 `UbuntuPC`
    - “用户名”是用户目录（`~`）的名字，类似变量名的命名，安装后不能更改，也不能使用空格，如 `User123`
 
-7. 点击“安装”
+6. 点击“安装”
 
-:::success[下一步]{open}
+{% callout type=success title=下一步 open=true %}
 安装好后拔出 U 盘，重启即可进系统。
 
 对于虚拟机，按照“安装”一节的第 4B 步逆操作即可。
-:::
+{% endcallout %}
 
 ## 三、安装软件的示例：安装和配置 VS Code
 
@@ -194,9 +186,9 @@ Please select boot device
 
 **此节演示使用包管理器安装软件的步骤**
 
-:::info[Tip: Linux 终端快捷键]{open}
+{% callout type=info title=Tip: Linux 终端快捷键 open=true %}
 全局快捷键：按 `Ctrl-Alt-T` 打开终端。
-:::
+{% endcallout %}
 
 在终端输入：
 
@@ -238,10 +230,10 @@ sudo apt-get install build-essential gdb
 
 对于反向操作同理，**注意：Ubuntu 可以访问 NTFS 格式的 Windows 系统分区（如 `C:`），但 Windows 不可以访问 ext4 格式的 Ubuntu 分区（如 `/`），对于 macOS 反之，macOS 使用 APFS，Linux 无法访问**
 
-:::success[成功！]{open}
+{% callout type=success title=成功！ open=true %}
 至此，你已完成 Ubuntu 的安装配置，享受新系统吧！
-:::
+{% endcallout %}
 
-:::info[提交新内容]{open}
+{% callout type=info title=提交新内容 open=true %}
 如果你有新的内容，欢迎在评论区补充。
-:::
+{% endcallout %}
