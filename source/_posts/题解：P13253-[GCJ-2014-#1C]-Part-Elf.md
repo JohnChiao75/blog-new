@@ -3,10 +3,8 @@ title: 题解：P13253 Part Elf
 date: 2026-05-16 11:05
 tags: 洛谷
 category: 题解
-author: JohnChiao75
+author: John Chiao
 ---
-
-
 
 ## 形式化题意
 
@@ -17,6 +15,7 @@ author: JohnChiao75
 ### 示例
 
 分数为 $\frac14$，可以由下式得出：
+
 $$
 \large{\frac{\frac{0}{1}+\frac{1}{2}}{2}}
 $$
@@ -34,6 +33,7 @@ $$
 ## 代码
 
 :::success[AC Code]
+
 ```cpp line-numbers
 #include<bits/stdc++.h>
 #define int long long
@@ -81,4 +81,5 @@ signed main()
 }
 
 ```
+
 :::
