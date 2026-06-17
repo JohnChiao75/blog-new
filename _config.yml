@@ -5,11 +5,11 @@
 # Site
 title: JohnCh's Blog
 subtitle: JohnCh's Home
-description: 'John Chiao 的个人技术与生活博客，不定期更新（Powered by Hexo and Anzhiyu）'
+description: "John Chiao 的个人技术与生活博客，不定期更新（Powered by Hexo and Anzhiyu）"
 keywords:
 author: John Chiao
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -34,6 +34,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "admin/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,7 +43,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -51,7 +52,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 
@@ -60,7 +61,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 12
   order_by: -date
 
@@ -72,7 +73,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
 
 # Category & Tag
@@ -91,7 +92,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -111,10 +112,10 @@ theme: redefine
 
 permalink_pinyin:
   enable: true
-  separator: '-' # default: '-'
+  separator: "-" # default: '-'
 
 plugins:
-- hexo-browsersync
+  - hexo-browsersync
 hexo-browsersync:
   ghostMode: true # 同步滚动条位置等行为
   notify: true # 开启通知提醒
@@ -130,11 +131,11 @@ envelope_comment:
     beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
     afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
   message:
-  #信笺正文，多行文本，写法如下
-  - 有什么想问的？
-  - 有什么想说的？
-  - 有什么想吐槽的？
-  - 哪怕是有什么想吃的，都可以告诉我哦~
+    #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
   bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
   height: #1024px，信封划出的高度
   path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
