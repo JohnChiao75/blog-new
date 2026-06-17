@@ -1,10 +1,10 @@
 ---
 title: 使用 VS Code 与 C/C++ 扩展快速配置环境
 date: 2026-02-07 21:07:08
-tags: 
-    - VS Code
+tags:
+  - VS Code
 category: 教程
-author: JohnChiao75
+author: John Chiao
 ---
 
 本文是 VS Code 和 C/C++ 扩展的安装与配置教程，如有不足，请在评论区指正
@@ -32,7 +32,9 @@ author: JohnChiao75
 点击上面的链接后点击 `Releases`，找到 1.70.2，这是最后支持 Windows 7/8/8.1 的版本，前往发布页面下载
 
 ---
+
 ### 配置中文
+
 安装好后，点击左侧活动栏的“扩展”，搜索`Chinese(Simplified)`，点击`安装`。安装好后按`Ctrl+Shift+P`，搜索`Display`，选择`Configure Display Language`，切换为中文
 
 ## 安装 `C/C++` 扩展
@@ -64,7 +66,6 @@ author: JohnChiao75
 #### 调试器（运行代码）
 
 在 VS Code 中新建 `.vscode/launch.json`，代码如下：
-
 
 ```javascript
 {
@@ -107,7 +108,6 @@ author: JohnChiao75
 
 同上，新建 `.vscode/tasks.json`
 
-
 ```javascript
 {
     "tasks": [
@@ -144,7 +144,6 @@ author: JohnChiao75
 
 新建 `.vscode/c_cpp_properties.json`：
 
-
 ```javascript
 {
     "configurations": [
@@ -166,20 +165,20 @@ author: JohnChiao75
     "version": 4
 }
 ```
+
 ---
 
 ### 检查
 
 当你看到这里，恭喜你！完成了 `C/C++` 的配置，现在你的目录应该是这样
 
-- 工作区目录  
+- 工作区目录
   - `.vscode`
     - `c_cpp_properties.json`
     - `launch.json`
     - `tasks.json`
     - `settings.json` (有可能没有)
   - `其他文件`
-
 
 ## 书写程序
 
@@ -189,13 +188,12 @@ author: JohnChiao75
 
 :::align{right}
 
-|行/列|空格/制表符长度|UTF-8|CRLF|{ }C++|Win32|
-|-:|-:|-:|-:|-:|-:|
+| 行/列 | 空格/制表符长度 | UTF-8 | CRLF | { }C++ | Win32 |
+| ----: | --------------: | ----: | ---: | -----: | ----: |
 
 ::::
 
 按 `Ctrl + Shift + B` 开始编译，编译完成会显示
-
 
 ```
 生成已成功完成。
@@ -210,11 +208,10 @@ author: JohnChiao75
 
 与 Dev-C++ 不同，在 VS Code 中，通过点击行号左侧的区间来设置/取消断点，类似这样：
 
-
 ```cpp lines=7-7
 #include <bits/stdc++.h>
 using namespace std;
-  
+
 int main()
 {
   	// Some Code...
@@ -235,8 +232,8 @@ int main()
 
 这是浮动工具栏按钮的解释：
 
-|(移动工具栏)|跳过(continue)|下一步(next)|单步进入|单步跳出|重新开始|暂停/停止|
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| (移动工具栏) | 跳过(continue) | 下一步(next) | 单步进入 | 单步跳出 | 重新开始 | 暂停/停止 |
+| :----------: | :------------: | :----------: | :------: | :------: | :------: | :-------: |
 
 ::::
 
@@ -247,11 +244,10 @@ int main()
 - 监视：添加查看，修改变量
 - 调用堆栈：查看函数调用轨迹，在调试搜索算法或递归时有用
 - 断点：设置断点的条件或设置异常处理
-  
+
 在调试模式中，编辑器将以黄色底色显示下一步将要执行的代码。
 
 此时就可以进行单步调试了
-
 
 ## GitHub Copilot（仅练习或开发）
 
