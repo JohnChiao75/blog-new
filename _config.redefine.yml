@@ -197,12 +197,6 @@ navbar:
     Home:
       path: /
       icon: fa-regular fa-house # can be empty
-    Archives:
-      path: /archives
-      icon: fa-regular fa-archive # can be empty
-    Tags:
-      path: /tags
-      icon: fa-regular fa-tags # can be empty
     Categories:
       path: /categories
       icon: fa-regular fa-folder # can be empty
@@ -212,12 +206,12 @@ navbar:
     # Status:
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    About:
-      icon: fa-regular fa-user
-      submenus:
-        Me: /about
-        Github: https://github.com/JohnChiao75
-    Travellings:
+    # About:
+    #   icon: fa-regular fa-user
+    #   submenus:
+    #     Me: /about
+    #     Github: https://github.com/JohnChiao75
+    开往:
       icon: fa-regular fa-train-subway
       path: https://www.travellings.cn/go.html
     #     Blog: https://ohevan.com
